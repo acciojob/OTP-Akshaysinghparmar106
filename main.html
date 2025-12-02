@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Verify Account</title>
+    <title>Verify Your Account</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div class="container">
-    <h2>Verify Your Account</h2>
-    <p>We emailed you the six digit code to <strong>acciojob@email.com</strong>  
-    Enter the code below to confirm your email address.</p>
+<div class="wrapper">
+    <div class="card">
 
-    <div class="otp-box">
-        <input type="text" maxlength="1" />
-        <input type="text" maxlength="1" />
-        <input type="text" maxlength="1" />
-        <input type="text" maxlength="1" />
-        <input type="text" maxlength="1" />
-        <input type="text" maxlength="1" />
-    </div>
+        <h2 id="verification_heading">Verify Your Account</h2>
 
-    <div class="note">
-        This is design only. We didn't actually send you an email as we don't have your email, right?
+        <p id="verification_subtext">
+            We emailed you the six digit code to acciojob@email.com
+            Enter the code below to confirm your email address.
+        </p>
+
+        <div class="otp-container">
+            <input type="text" maxlength="1" class="code" />
+            <input type="text" maxlength="1" class="code" />
+            <input type="text" maxlength="1" class="code" />
+            <input type="text" maxlength="1" class="code" />
+            <input type="text" maxlength="1" class="code" />
+            <input type="text" maxlength="1" class="code" />
+        </div>
+
+        <p class="note">
+            This is design only. We didn't actually send you an email as we
+            don't have your email, right?
+        </p>
+
     </div>
 </div>
 

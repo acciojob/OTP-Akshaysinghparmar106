@@ -1,1 +1,61 @@
 /*  your css code here. If applicable */
+body {
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 14px;
+    width: 70%;
+    max-width: 700px;
+    border: 3px solid #000;
+    text-align: center;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 15px;
+    color: #555;
+}
+
+.otp-box {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 25px 0;
+}
+
+.otp-box input {
+    width: 60px;
+    height: 70px;
+    font-size: 40px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+    outline: none;
+    transition: 0.2s;
+}
+
+.otp-box input:focus {
+    border-color: #007BFF;
+}
+
+.note {
+    margin-top: 20px;
+    background: #e6e6e6;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #666;
+}
+

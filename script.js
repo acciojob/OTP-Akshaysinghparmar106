@@ -1,30 +1,20 @@
 //your JS code here. If required.
-const inputs = document.querySelectorAll('.code');
+const inputs = document.querySelectorAll(".otp-box input");
 
-// Apply behavior to each field
 inputs.forEach((input, index) => {
-
-    // When typing a number
-    input.addEventListener('input', () => {
-        input.value = input.value.replace(/[^0-9]/g, ''); // Allow only digits
-
-        if (input.value && index < inputs.length - 1) {
-            inputs[index + 1].focus();  // Move to next input
+    input.addEventListener("input", () => {
+        input.value = input.value.replace(/[^0-9]/g, ""); // allow only numbers
+        if (input.value !== "" && index < inputs.length - 1) {
+            inputs[index + 1].focus();
         }
     });
 
-    // Backspace behavior
-    input.addEventListener('keydown', (e) => {
-        if (e.key === 'Backspace') {
-            if (input.value === '') {
-                if (index > 0) {
-                    inputs[index - 1].value = ''; 
-                    inputs[index - 1].focus();    // Move back to previous input
-                }
-            }
+    input.addEventListener("keydown", (e) => {
+        if (e.key === "Backspace" && input.value === "" && index > 0) {
+            inputs[index - 1].focus();
         }
     });
 });
 
-// Auto-focus the first box
-inputs[0].focus();
+
+   

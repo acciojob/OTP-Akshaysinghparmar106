@@ -17,16 +17,16 @@ body {
 }
 
 #verification_heading {
-    font-size: 26px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 12px;
 }
 
 #verification_subtext {
     color: #555;
-    font-size: 15px;
+    font-size: 10px;
     max-width: 520px;
-    margin: 0 auto 30px auto;
+    margin: 0auto 40px auto;
 }
 
 .code-container {
@@ -51,7 +51,7 @@ body {
     background: #e8e8e8;
     display: inline-block;
     padding: 12px 20px;
-    font-size: 14px;
+    font-size: 22px;
     border-radius: 8px;
     color: #555;
 }

@@ -1,18 +1,22 @@
 //your JS code here. If required.
 const inputs = document.querySelectorAll(".code");
 
+inputs[0].focus();
+
 inputs.forEach((input, index) => {
+    input.addEventListener("input", (e) => {
+        const value = e.target.value;
 
-    // Forward typing
-    input.addEventListener("input", () => {
-        input.value = input.value.replace(/[^0-9]/g, "");
+        if (!/^[0-9]$/.test(value)) {
+            e.target.value = "";
+            return;
+        }
 
-        if (input.value && index < inputs.length - 1) {
+        if (index < inputs.length - 1) {
             inputs[index + 1].focus();
         }
     });
 
-    // Backspace handling
     input.addEventListener("keydown", (e) => {
         if (e.key === "Backspace") {
             if (input.value === "") {
@@ -26,3 +30,4 @@ inputs.forEach((input, index) => {
         }
     });
 });
+

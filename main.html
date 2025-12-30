@@ -4,33 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OTP Verification</title>
-    <link rel="stylesheet" href="style.css">
+    <title>OTP Entry</title>
 </head>
 <body>
-
-<div class="otp-wrapper">
-
-    <h1 id="verification_heading">Verify Your Account</h1>
-
-    <p id="verification_subtext">
-        We emailed you the six digit code to acciojob@email.com Enter the code below to confirm your email address.</p>
+    <h2 id="verification_heading"> Verify Your Account</h2>
+    <h5 id="verification_subtext"> We emailed you the OTP</h5>
 
     <div class="code-container">
-        <input type="text" maxlength="1" class="code">
-        <input type="text" maxlength="1" class="code">
-        <input type="text" maxlength="1" class="code">
-        <input type="text" maxlength="1" class="code">
-        <input type="text" maxlength="1" class="code">
-        <input type="text" maxlength="1" class="code">
+        <input class="code" id="code-1" type="number" min="0" max="9" placeholder="0" required>
+        <input class="code" id="code-2" type="number" min="0" max="9" placeholder="0" required>
+        <input class="code" id="code-3" type="number" min="0" max="9" placeholder="0" required>
+        <input class="code" id="code-4" type="number" min="0" max="9" placeholder="0" required>
+        <input class="code" id="code-5" type="number" min="0" max="9" placeholder="0" required>
+        <input class="code" id="code-6" type="number" min="0" max="9" placeholder="0" required>
     </div>
 
-    <p class="footer-text">
-        This is design only. We didn't actually send you an email as we don't have your email, right?
-    </p>
-
-</div>
-
-<script src="script.js"></script>
+    <script src="./otpEntry.js"></script>
 </body>
-</html>
+</html> 
